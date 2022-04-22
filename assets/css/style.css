@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #800080;
+    --secondary-color: black;
+    --text-color: #fff;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.box {
+    background-color:  var(--secondary-color);
+}
