@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #800080;
     --secondary-color: black;
-    --text-color: #fff;
+    --white: #fff;
 }
 
 body {
@@ -9,14 +15,66 @@ body {
 }
 
 header {
-    padding: 20px 35px;
-    background-color: var(--primary-color);
+    padding: 20px 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: var(--secondary-color);
+
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul div{
+    padding: 20px 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: cyan;
+}
+
+header nav ul li a {
+    padding: 10px 70px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: var(--secondary-color);
+}
+
+footer h2 {
+    color: var(--white);
+    font-size: 30px;
+    margin: 0;
 }
 
 
-.box {
-    background-color:  var(--secondary-color);
+.rotate {
+    transform: rotate(-45deg); 
+    background-color: var(--primary-color);
 }
