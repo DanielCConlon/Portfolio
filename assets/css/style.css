@@ -116,6 +116,42 @@ section {
 /* End of styling for intro class section */
 
 /* start of styling for work section */
+.work {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.work h2 {
+    border-right: 5px solid var(--color-black);
+    font-size: 46px;
+    text-align: right;
+    padding: 50px;
+}
+
+.work img {
+    padding: 20px;
+}
+
+.work-box {
+    background-color: lightblue;
+}
+.work-box h3 {
+    font-weight: bold;
+    text-align: center;
+}
+.work-box p{
+    text-align: center;
+
+}
+
+.main-work {
+    padding: 20px;
+    width: 75%;
+}
 
 /* end of styling for work section */
 
