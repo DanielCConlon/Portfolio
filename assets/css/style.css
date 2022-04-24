@@ -19,8 +19,70 @@ body {
 }
 
 header {
-    
+    /* flex-row class added in html */
+    padding: 20px 35px;
+    background-color: var(--color-black);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+
+    z-index: 9999;
 }
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-yellow);
+}
+
+header nav ul {
+    /* Flex-row added in html */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow:  0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--color-purple);
+    color: var(--color-cyan);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+footer {
+    background: var(--color-black);
+    padding: 45px 35px;
+    /* added flex-row to html */
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: var(--color-yellow);
+}
+
+footer h2 {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+section {
+    padding: 60px;
+}
+
+/* global classes */
 
 .flex-row {
     display: flex;
@@ -33,6 +95,30 @@ header {
 .text-left {
     text-align: left;
 }
+/* end global classes */
+
+/* Start of styling for intro class section */
+.about-me {
+    border-right: 5px solid var(--color-black);
+    font-size: 46px;
+    text-align: right;
+    padding: 25px;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--color-black);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* End of styling for intro class section */
+
+/* start of styling for work section */
+
+/* end of styling for work section */
+
 
 @media screen and (max-width: 980px) {
     
