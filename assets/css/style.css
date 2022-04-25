@@ -155,9 +155,9 @@ section {
 }
 
 .main-work-container {
-    padding: 20px;
-    width: 63%;
-    margin-left: auto;
+    /* padding: 20px; */
+    /* width: 63%; */
+    margin: 97px auto;
 }
 
 .other-work-container {
