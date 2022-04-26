@@ -157,7 +157,7 @@ section {
 .main-work-container {
     /* padding: 20px; */
     /* width: 63%; */
-    margin: 97px auto;
+    /* margin: 97px auto; */
 }
 
 .other-work-container {
@@ -177,6 +177,23 @@ section {
 }
 
 /* end of styling for work section */
+
+/* contact me styling */
+
+.contact-me-container {
+    display: flex;
+
+}
+
+.contact-info-container {
+    margin: 15px;
+}
+
+section ul {
+    list-style: none;
+}
+
+/* end of contact me styling */
 
 
 @media screen and (max-width: 980px) {
