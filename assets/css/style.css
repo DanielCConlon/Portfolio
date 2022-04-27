@@ -90,6 +90,7 @@ section {
 
 .border-style {
     border: 5px solid violet;
+    margin: 5px;
 }
 
 .text-left {
@@ -127,8 +128,7 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: right;
+    /* justify-content: space-evenly; */
 }
 
 .work h2 {
@@ -155,9 +155,17 @@ section {
 }
 
 .main-work-container {
-    /* padding: 20px; */
-    /* width: 63%; */
-    /* margin: 97px auto; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.minor-project {
+    flex-basis: 45%;
 }
 
 .other-work-container {
