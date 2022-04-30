@@ -16,12 +16,15 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-yellow);
+    background-color: var(--color-black);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 header {
     /* flex-row class added in html */
     padding: 20px 35px;
-    background-color: var(--color-black);
+    /* background-color: var(--color-black); */
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
@@ -33,7 +36,7 @@ header h1 {
     font-weight: bold;
     font-size: 36px;
     margin: 0;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
 }
 
 header a {
@@ -78,8 +81,19 @@ footer h2 {
     line-height: 1.5;
 }
 
-section {
-    padding: 60px;
+
+section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section ul li p {
+    padding: 15px;
+}
+
+section ul li a {
+    padding: 15px;
 }
 
 /* global classes */
@@ -90,7 +104,6 @@ section {
 
 .border-style {
     border: 5px solid violet;
-    margin: 5px;
 }
 
 .text-left {
@@ -106,15 +119,17 @@ section {
 
 /* Start of styling for intro class section */
 .about-me {
-    border-right: 5px solid var(--color-black);
+    border-right: 5px solid slateblue;
     font-size: 46px;
     text-align: right;
     padding: 25px;
+    text-decoration: underline;
+    text-decoration-color: slateblue;
 }
 
 .intro p {
     line-height: 1.7;
-    color: var(--color-black);
+    color: white;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -122,7 +137,15 @@ section {
 }
 /* End of styling for intro class section */
 
+
+
 /* start of styling for work section */
+.work-container {
+    width: 100vw;
+    text-decoration: underline;
+    text-decoration-color: slateblue;
+}
+
 .work {
     margin: 0px auto;
     width: 100%;
@@ -132,14 +155,15 @@ section {
 }
 
 .work h2 {
-    border-right: 5px solid var(--color-black);
+    border-right: 5px solid slateblue;
     font-size: 46px;
     text-align: right;
-    padding: 25px;
+    padding: 72px;
 }
 
 .work img {
     padding: 20px;
+    width: 100%;
 }
 
 .work-box {
@@ -157,16 +181,25 @@ section {
 .main-work-container {
     display: flex;
     flex-wrap: wrap;
+    border: orange 5px solid;
+    width: 85%;
+    justify-content: center;
+    margin: 0 0 0 3vw;
+    color: var(--color-black);
 }
 
 .project {
-    flex-basis: 400px;
+    flex-basis: 100%;
     flex-grow: 1;
+    border: yellow 5px solid;
 }
 
 .minor-project {
     flex-basis: 45%;
+    max-width: 45%;
+    object-fit: contain;
 }
+
 
 .other-work-container {
     padding: 20px;
@@ -176,13 +209,12 @@ section {
 
 .other-work-left{
     display: flex;
-    flex-direction: row;
 }
 
 .other-work-right {
     display: flex;
-    flex-direction: row;
 }
+
 
 /* end of styling for work section */
 
@@ -190,26 +222,45 @@ section {
 
 .contact-me-container {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: slateblue;
 
 }
 
 .contact-info-container {
-    margin: 15px;
-}
-
-section ul {
-    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-section ul li p {
-    padding: 15px;
+    flex-wrap: wrap;
+    font-size: 40px;
+    margin: 0 0 0 5vw;
+    text-decoration: underline;
+    text-decoration-color: slateblue;
 }
 
-section ul li a {
-    padding: 15px;
+.contact-info-phone {
+    margin: 0 0 0 10vw;
 }
+
+.contact-info-email {
+    margin: 0 0 0 10vw;
+}
+
+.contact-info-github {
+    margin: 0 0 0 10vw;
+}
+
+
+.contact-me-box {
+    border-right: 5px solid black;
+    font-size: 46px;
+}
+
+.contact-info-email a, .contact-info-github a {
+    color: var(--color-yellow);
+}
+
+
 
 /* end of contact me styling */
 
