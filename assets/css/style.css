@@ -98,6 +98,10 @@ section ul li a {
 
 /* global classes */
 
+.header-container {
+    border-bottom: var(--color-cyan) 5px solid;
+}
+
 .flex-row {
     display: flex;
 }
@@ -122,9 +126,14 @@ section ul li a {
     border-right: 5px solid slateblue;
     font-size: 46px;
     text-align: right;
-    padding: 25px;
+    padding: 24px;
     text-decoration: underline;
     text-decoration-color: slateblue;
+}
+
+.about-me-section {
+    margin-bottom: 5px;
+    border-bottom: var(--color-cyan) 5px solid;
 }
 
 .intro p {
@@ -144,6 +153,7 @@ section ul li a {
     width: 100vw;
     text-decoration: underline;
     text-decoration-color: slateblue;
+    border-bottom: var(--color-cyan) 5px solid;
 }
 
 .work {
@@ -183,7 +193,6 @@ section ul li a {
 .main-work-container {
     display: flex;
     flex-wrap: wrap;
-    border: orange 5px solid;
     width: 78%;
     justify-content: center;
     margin: 0 0 0 3vw;
@@ -195,7 +204,7 @@ section ul li a {
 .project {
     flex-basis: 100%;
     flex-grow: 1;
-    border: yellow 5px solid;
+
 }
 
 .project img {
@@ -270,6 +279,7 @@ section ul li a {
 .contact-me-box {
     border-right: 5px solid slateblue;
     font-size: 46px;
+    padding: 5px;
 }
 
 .contact-info-email a, .contact-info-github a {

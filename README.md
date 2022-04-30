@@ -9,6 +9,9 @@ It also adhears to all accessibility standards, semantic HTML elements, and code
 * HTML
 * CSS
 
+## Image
+![Website image](./assets/images/portfolio-picture.PNG))
+
 ## Website
 https://github.com/DanielCConlon/Portfolio
 
@@ -16,3 +19,4 @@ https://github.com/DanielCConlon/Portfolio
 https://danielcconlon.github.io/Portfolio/
 ## Contribution
 Made by ❤️ by Daniel
+
