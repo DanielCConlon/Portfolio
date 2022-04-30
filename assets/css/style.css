@@ -113,7 +113,7 @@ section ul li a {
 
 /* Styling for the div section */
 .hero {
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -151,7 +151,7 @@ section ul li a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    
 }
 
 .work h2 {
@@ -162,12 +162,14 @@ section ul li a {
 }
 
 .work img {
-    padding: 20px;
     width: 100%;
+    height: auto;
 }
 
 .work-box {
     background-color: lightblue;
+    width: 55%;
+    font-size: 25px;
 }
 .work-box h3 {
     font-weight: bold;
@@ -182,10 +184,12 @@ section ul li a {
     display: flex;
     flex-wrap: wrap;
     border: orange 5px solid;
-    width: 85%;
+    width: 78%;
     justify-content: center;
     margin: 0 0 0 3vw;
     color: var(--color-black);
+    
+
 }
 
 .project {
@@ -194,10 +198,23 @@ section ul li a {
     border: yellow 5px solid;
 }
 
+.project img {
+    height: 175px;
+    width: auto;
+    border: var(--color-white) 5px solid;
+}
+
 .minor-project {
     flex-basis: 45%;
     max-width: 45%;
     object-fit: contain;
+    padding: 5px;
+}
+
+.minor-project img {
+    height: 175px;
+    width: auto;
+    border: var(--color-white) 5px solid;
 }
 
 
@@ -216,6 +233,7 @@ section ul li a {
 }
 
 
+
 /* end of styling for work section */
 
 /* contact me styling */
@@ -224,40 +242,39 @@ section ul li a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-decoration: underline;
-    text-decoration-color: slateblue;
 
 }
 
 .contact-info-container {
     display: flex;
     flex-wrap: wrap;
-    font-size: 40px;
+    font-size: 34px;
     margin: 0 0 0 5vw;
     text-decoration: underline;
     text-decoration-color: slateblue;
 }
 
 .contact-info-phone {
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 3vw;
 }
 
 .contact-info-email {
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 3vw;
 }
 
 .contact-info-github {
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 3vw;
 }
 
 
 .contact-me-box {
-    border-right: 5px solid black;
+    border-right: 5px solid slateblue;
     font-size: 46px;
 }
 
 .contact-info-email a, .contact-info-github a {
     color: var(--color-yellow);
+    text-decoration-color: slateblue;
 }
 
 
@@ -266,13 +283,81 @@ section ul li a {
 
 
 @media screen and (max-width: 980px) {
-    
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header nav {
+        margin-top:  20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+
+
+    .main-work-container {
+        width: 69%;
+    }
+
+
+    .project img {
+        justify-content: center;
+    }
+
+    .minor-project img {
+        width: 100%;
+    }
+
+    .work-box {
+        width: 92%;
+    }
+
+    .contact-me-container {
+        justify-content: center;
+    }
+
+    .contact-info-email, .contact-info-github, .contact-info-phone {
+        width: auto;
+        justify-content: center;
+        position: relative;
+    }
+
+
+
 }
 
 @media screen and (max-width: 768px) {
-    
+
+    .about-me {
+        font-size: 39px;
+        padding: 2px;
+    }
+
+    .work h2 {
+        padding: 30px;
+    }
+
+    .work-box p {
+        font-size: medium;
+    }
+
+    .contact-info-container {
+        justify-content: space-evenly;
+        margin: 0 0 0 -10vw;
+    }
+
+    .contact-info-email, .contact-info-github, .contact-info-phone {
+       font-size: medium;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
-    
+
 }
