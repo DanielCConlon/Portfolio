@@ -22,224 +22,48 @@ body {
 }
 
 header {
-    /* flex-row class added in html */
-    padding: 20px 35px;
-    /* background-color: var(--color-black); */
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
-
     z-index: 9999;
+    justify-content: space-between;
+    display: flex;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    margin: 0;
-
 }
 
-header a {
-    text-decoration: none;
+header h1 a {
     color: var(--color-yellow);
 }
 
 header nav ul {
-    /* Flex-row added in html */
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
+
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
 
 header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow:  0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-header nav ul li a:hover {
-    background: var(--color-purple);
-    color: var(--color-cyan);
-    border-radius: 15px;
-    text-shadow: none;
-}
-
-footer {
-    background: var(--color-black);
-    padding: 45px 35px;
-    /* added flex-row to html */
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+    /* makes the navigation text color yellow */
     color: var(--color-yellow);
-}
-
-footer h2 {
-    font-size: 30px;
-    line-height: 1.5;
-}
-
-
-section ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+    text-decoration: none;
     align-items: center;
-}
-section ul li p {
-    padding: 15px;
+    padding: 40px;
 }
 
-section ul li a {
-    padding: 15px;
-}
+
+
 
 /* global classes */
-
-.header-container {
-    border-bottom: var(--color-cyan) 5px solid;
-}
-
-.flex-row {
-    display: flex;
-}
-
-.border-style {
-    border: 5px solid violet;
-}
-
-.text-left {
-    text-align: left;
-}
-/* end global classes */
-
-/* Styling for the div section */
-.hero {
-    text-align: center;
-}
-
-
 /* Start of styling for intro class section */
-.about-me {
-    border-right: 5px solid slateblue;
-    font-size: 46px;
-    text-align: right;
-    padding: 24px;
-    text-decoration: underline;
-    text-decoration-color: slateblue;
-}
 
-.about-me-section {
-    margin-bottom: 5px;
-    border-bottom: var(--color-cyan) 5px solid;
-}
-
-.intro p {
-    line-height: 1.7;
-    color: white;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
 /* End of styling for intro class section */
 
 
 
 /* start of styling for work section */
-.work-container {
-    width: 100vw;
-    text-decoration: underline;
-    text-decoration-color: slateblue;
-    border-bottom: var(--color-cyan) 5px solid;
-}
-
-.work {
-    margin: 0px auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.work h2 {
-    border-right: 5px solid slateblue;
-    font-size: 46px;
-    text-align: right;
-    padding: 72px;
-}
-
-.work img {
-    width: 100%;
-    height: auto;
-}
-
-.work-box {
-    background-color: lightblue;
-    width: 55%;
-    font-size: 25px;
-}
-.work-box h3 {
-    font-weight: bold;
-    text-align: center;
-}
-.work-box p{
-    text-align: center;
-
-}
-
-.main-work-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 78%;
-    justify-content: center;
-    margin: 0 0 0 3vw;
-    color: var(--color-black);
-    
-
-}
-
-.project {
-    flex-basis: 100%;
-    flex-grow: 1;
-
-}
-
-.project img {
-    height: 175px;
-    width: auto;
-    border: var(--color-white) 5px solid;
-}
-
-.minor-project {
-    flex-basis: 45%;
-    max-width: 45%;
-    object-fit: contain;
-    padding: 5px;
-}
-
-.minor-project img {
-    height: 175px;
-    width: auto;
-    border: var(--color-white) 5px solid;
-}
-
-
-.other-work-container {
-    padding: 20px;
-    width: 0%;
-    margin: 0px auto;
-}
-
-.other-work-left{
-    display: flex;
-}
-
-.other-work-right {
-    display: flex;
-}
 
 
 
@@ -247,149 +71,18 @@ section ul li a {
 
 /* contact me styling */
 
-.contact-me-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-.contact-info-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 34px;
-    margin: 0 0 0 5vw;
-    text-decoration: underline;
-    text-decoration-color: slateblue;
-}
-
-.contact-info-phone {
-    margin: 0 0 0 3vw;
-}
-
-.contact-info-email {
-    margin: 0 0 0 3vw;
-}
-
-.contact-info-github {
-    margin: 0 0 0 3vw;
-}
-
-
-.contact-me-box {
-    border-right: 5px solid slateblue;
-    font-size: 46px;
-    padding: 5px;
-}
-
-.contact-info-email a, .contact-info-github a {
-    color: var(--color-yellow);
-    text-decoration-color: slateblue;
-}
-
-
 
 /* end of contact me styling */
 
 
 @media screen and (max-width: 980px) {
 
-    header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }
-
-    header nav {
-        margin-top:  20px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    header nav ul li a {
-        font-size: 25px;
-    }
-
-
-    .main-work-container {
-        width: 69%;
-    }
-
-
-    .project img {
-        justify-content: center;
-    }
-
-    .minor-project img {
-        width: 100%;
-    }
-
-    .work-box {
-        width: 92%;
-    }
-
-    .contact-me-container {
-        justify-content: center;
-    }
-
-    .contact-info-email, .contact-info-github, .contact-info-phone {
-        width: auto;
-        justify-content: center;
-        position: relative;
-    }
-
-
-
 }
 
 @media screen and (max-width: 768px) {
 
-    .about-me {
-        font-size: 39px;
-        padding: 2px;
-    }
-
-    .work h2 {
-        padding: 30px;
-    }
-
-    .work-box p {
-        font-size: medium;
-    }
-
-    .contact-info-container {
-        justify-content: space-evenly;
-        margin: 0 0 0 -10vw;
-    }
-
-    .contact-info-email, .contact-info-github, .contact-info-phone {
-       font-size: medium;
-    }
-
 }
 
 @media screen and (max-width: 575px) {
-
-    .work {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .work h2 {
-        border-right: 0 solid slateblue;
-        border-bottom: 5px solid slateblue;
-    }
-
-    .main-work-container {
-        padding: 5px;
-    }
-
-
-    .contact-me-box {
-        font-size: 36px;
-        border-right: 0 solid slateblue;
-        border-bottom: 5px solid slateblue;
-    }
 
 }
