@@ -25,6 +25,7 @@ header {
     z-index: 9999;
     justify-content: space-between;
     display: flex;
+    padding-bottom: 5%;
 }
 
 header h1 {
@@ -60,20 +61,159 @@ footer h2 {
     justify-content: center;
 }
 
+a {
+    color: var(--color-yellow);
+    text-decoration: none;
+}
 
 
 /* global classes */
-/* Start of styling for intro class section */
-
-/* End of styling for intro class section */
-
-
-
-/* start of styling for work section */
+.main-container {
+    display: flex;
+    height: 300px;
+    margin-bottom: 3vw;
+}
 
 
+/* Start of styling for about class section */
+.about-me {
+    display: flex;
+    align-items: center;
+    border-right: 5px solid slateblue;
+    font-size: 1.55vw;
+    padding: 120px;
+}
 
-/* end of styling for work section */
+.about-me-info {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.about-me-info img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about-me-info p {
+    padding-left: 5vw;
+    font-size: 24px;
+}
+
+/* End of styling for about me class section */
+.project-header {
+    display: flex;
+    align-items: center;
+    border-right: 5px solid slateblue;
+    font-size: 1.55vw;
+    padding: 56px;
+}
+
+
+/* start of styling for group project section */
+.project-container {
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+    flex-wrap: wrap;
+}
+
+.project-container-height {
+    height: fit-content;
+}
+
+.tile1 {
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/Capture.PNG);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+
+    margin-bottom: 1vw;
+}
+
+.tile2 {
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/app1.png);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+
+    margin-bottom: 1vw;
+}
+
+
+/* end of styling for group project section */
+
+
+/* Start of styling for solo project section */
+.tile3 {
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    height: 355px;
+    background-image: url(../images/run-buddy.PNG);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+
+    margin-bottom: 1vw;
+}
+
+.tile4 {
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    height: 720px;
+    background-image: url(../images/coming-soon-neon-sign-coming-soon-badge-in-vector-21133321.jpg);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+
+    margin-bottom: 1vw;
+}
+
+.tile5 {
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    height: 720px;
+    background-image: url(../images/coming-soon-neon-sign-coming-soon-badge-in-vector-21133321.jpg);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+
+    margin-bottom: 1vw;
+}
+
+/* end of styling for solo project section */
+.contact-me-header {
+    display: flex;
+    align-items: center;
+    border-right: 5px solid slateblue;
+    font-size: 1.55vw;
+    padding: 56px;
+}
+
+.contact-me-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-me-info a {
+    display: flex;
+    color: var(--color-yellow);
+
+    font-size: 40px;
+    line-height: 1.5vw;
+}
+
+.contact-me-info ul li a {
+    display: flex;
+    justify-content: space-around;
+}
 
 /* contact me styling */
 
