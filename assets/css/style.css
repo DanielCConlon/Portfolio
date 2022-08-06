@@ -107,7 +107,7 @@ a {
     align-items: center;
     border-right: 5px solid slateblue;
     font-size: 1.55vw;
-    padding: 56px;
+    padding: 57px;
 }
 
 
@@ -152,6 +152,14 @@ a {
 
 
 /* Start of styling for solo project section */
+.solo-project-header {
+    display: flex;
+    align-items: center;
+    border-right: 5px solid slateblue;
+    font-size: 1.55vw;
+    padding: 88px;
+}
+
 .tile3 {
     display: flex;
     font-size: 28px;
@@ -194,7 +202,7 @@ a {
     align-items: center;
     border-right: 5px solid slateblue;
     font-size: 1.55vw;
-    padding: 56px;
+    padding: 83px;
 }
 
 .contact-me-info {
