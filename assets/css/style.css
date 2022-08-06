@@ -208,19 +208,18 @@ a {
 .contact-me-info {
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
-.contact-me-info a {
+.contact-me-info ul  {
     display: flex;
-    color: var(--color-yellow);
-
-    font-size: 40px;
-    line-height: 1.5vw;
+    list-style: none;
+    font-size: 1.55vw;
 }
 
-.contact-me-info ul li a {
+.contact-me-info ul li {
     display: flex;
-    justify-content: space-around;
+    padding: 65px;
 }
 
 /* contact me styling */
