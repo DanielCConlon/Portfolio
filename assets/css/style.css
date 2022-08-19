@@ -131,7 +131,7 @@ a {
     background-image: url(../images/Capture.PNG);
     background-repeat: no-repeat;
     align-items: flex-end;
-
+    background-size: 100% 100%;
     margin-bottom: 1vw;
 }
 
@@ -143,6 +143,7 @@ a {
     background-image: url(../images/app1.png);
     background-repeat: no-repeat;
     align-items: flex-end;
+    background-size: 100% 100%;
 
     margin-bottom: 1vw;
 }
@@ -166,8 +167,10 @@ a {
     width: 100%;
     height: 355px;
     background-image: url(../images/run-buddy.PNG);
+    background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
+    background-size: 100% 100%;
 
     margin-bottom: 1vw;
 }
@@ -180,6 +183,7 @@ a {
     background-image: url(../images/coming-soon-neon-sign-coming-soon-badge-in-vector-21133321.jpg);
     background-repeat: no-repeat;
     align-items: flex-end;
+    background-size: 100% 100%;
 
     margin-bottom: 1vw;
 }
@@ -192,6 +196,7 @@ a {
     background-image: url(../images/coming-soon-neon-sign-coming-soon-badge-in-vector-21133321.jpg);
     background-repeat: no-repeat;
     align-items: flex-end;
+    background-size: 100% 100%;
 
     margin-bottom: 1vw;
 }
@@ -229,13 +234,110 @@ a {
 
 
 @media screen and (max-width: 980px) {
+    .about-me {
+        padding: 82px;
+    }
+
+    .project-header {
+        padding: 53px;
+    }
+
+    .solo-project-header{
+        padding: 60px;
+    }
+
+    .contact-me-header{
+        padding: 53px;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
+    header nav ul {
+        font-size: 24px;
+    }
 
+    .about-me {
+        padding: 30px;
+    }
+
+    .project-header {
+        padding: 3px;
+    }
+
+    .solo-project-header{
+        padding: 9px;
+    }
+
+    .contact-me-header{
+        padding: 9px;
+    }
 }
 
 @media screen and (max-width: 575px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 5px solid slateblue;
+        border-right: none;
+        margin-bottom: 5px;
+        padding: 15px;
+    }
+
+    .about-me-info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-me-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 5px solid slateblue;
+        border-right: none;
+    }
+
+    .project-container {
+        padding-left: 0px;
+    }
+
+    .project-header {
+        border-right: none;
+        border-bottom: 5px solid slateblue;
+    }
+
+    .solo-project-header {
+        border-right: none;
+        border-bottom: 5px solid slateblue;
+    }
+
+    .contact-me-header {
+        border-right: none;
+        border-bottom: 5px solid slateblue;
+    }
+
+    .contact-me-info{
+        margin: 0px;
+    }
+
+    .contact-me-info ul {
+        font-size: 3.55vw;
+    }
+
+    footer h2 {
+        font-size: 24px;
+    }
 
 }
