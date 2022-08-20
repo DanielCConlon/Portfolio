@@ -13,7 +13,7 @@ It also adhears to all accessibility standards, semantic HTML elements, and code
 
 ## Image
 
-![Website image](./assets/images/After%20group%20project%20was%20added.PNG))
+![Website image](./assets/images/updated%20read%20me.PNG))
 
 ## Website
 
